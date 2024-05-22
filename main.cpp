@@ -192,9 +192,9 @@ int main( int argc, char* argv[] )
 
 	std::cout << "Benchmarking search algorithms: " << std::endl;
 
-	typedef float data_t;  // Type of data, on which Q-ary search will run
+	typedef int data_t;  // Type of data, on which Q-ary search will run
 
-	const int N = 10'000;           // Length of the sorted array
+	const int N = 7'500;            // Length of the sorted array
 	data_t A[ N ];                  // The sorted array
 	const data_t start_q = 0;              // Start of the query range
 	const data_t finish_q = 10'000'000;    // Finish of the query range
@@ -249,21 +249,17 @@ int main( int argc, char* argv[] )
 			start_q, finish_q, step_q );
 
 
-
-	// Try move the array data to heap
+	// - Try move the array data to heap
 	//    or to global memory
 
-	// Try playing with array length
+	// + Try playing with array length
 	//
 
-	// Try searches on other data types
+	// + Try searches on other data types
 	//
 
-	// Try on other compilers
+	// + Try on other compilers
 	//
-
-
-
 
 
 	std::cout << "Final value of the 'collector' variable (to prevent compiler optimizations): " 
