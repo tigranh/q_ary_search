@@ -3,7 +3,7 @@ cmake_minimum_required (VERSION 3.23)
 
 project (q_ary_search_demo)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 set (HEADER_FILES
 	q_ary_search.hpp 
